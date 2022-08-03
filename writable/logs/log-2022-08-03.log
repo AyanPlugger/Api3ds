@@ -1,0 +1,18 @@
+CRITICAL - 2022-08-03 12:21:08 --> Call to undefined function App\Controllers\findALL()
+in APPPATH\Controllers\Produtos.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Produtos->listar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-03 12:38:48 --> Unknown column '$id' in 'where clause'
+CRITICAL - 2022-08-03 12:38:48 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Models\ProdutosModel.php(14): CodeIgniter\BaseModel->first()
+ 3 APPPATH\Controllers\Produtos.php(22): App\Models\ProdutosModel->getProduto('2')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Produtos->produto('2')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
